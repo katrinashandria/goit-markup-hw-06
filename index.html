@@ -401,27 +401,27 @@
                       </svg>
                 </a>
             </li>
+           
+            
     </ul>
     </div>
 
-    <div>
-    
-        <p class="footer-title">підпишіться на розсилку</p>
-       
-                <form class="footer-form" name="signup_form" autocomplete="on" novalidate>
-                    <label>
-                      
-                      <input type="email" name="email" placeholder="E-mail"/>
-                    </label>
+    <div class="send-form-footer-down">
+        <p class="footer-title">Підпишіться на розсилку</p>
+<form class="footer-form">
+<div>
+    <label for="user_mail" class="user-form-label">E-mail</label>
+    <input type="text" class="footer-mail" id="user_mail" name="user_mail">
+</div>
 
-                    <button type="submit" class="footer-button" data-modal-open>Підписатися
+<button type="submit" class="footer-button">Підписатися</button>
+    <svg class="footer-send-icon" width="24" height="24">
+    <use href="./images/icons.svg#icon-send"></use>
+    </svg>
 
-                        <svg class="footer-send-icon" width="27" height="27">
-                            <use href="./images/icons.svg#icon-send"></use>
-                          </svg>
-                    </button>
-                
-        </div>
+</form>
+
+    </div>
 
 </div>
     </footer>
@@ -437,7 +437,7 @@
             </svg>
         </button>
 
-        <h1>Залиште свої дані, ми вам передзвонимо</h1>
+        <h1 class="modal-name">Залиште свої дані, ми вам передзвонимо</h1>
         <form class="modal-user-form">
             <div role="group" class="user-form-group">
                 <label for="user_name" class="user-form-label">Ім'я</label>
@@ -463,10 +463,13 @@
                           <use href="./images/icons.svg#icon-usermail"></use>
                         </svg>
                     </div>
+                    
 
                     <label for="user_message" class="user-form-label">Коментар</label>
-                    <textarea  class="user-form-message" name="user_message" id="user_message" rows="6">
+                    <div>
+                    <textarea class="user-form-message" name="user_message" id="user_message" rows="6">
                     </textarea>
+                </div>
             </div>
             <div role="group">
                     <input type="checkbox" class="user-form-checkbox" id="user_agreement">

@@ -834,6 +834,17 @@ fill: var(--main-background-color);
 
 }
 
+.footer-send-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-form-footer-down {
+    position: relative;
+}
+
 .footer-form {
     display: flex;
     gap: 12px;
@@ -841,16 +852,10 @@ fill: var(--main-background-color);
     align-items: center;
     padding: 0;
     margin: 0;
+
+    
 }
 
-.footer-form-try {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
 
 /*--------icons-----------*/
 
@@ -865,7 +870,7 @@ fill: currentColor;
 .footer-button {
     
     padding: 10px 28px;
-    /* padding-right: 62px; */
+    padding-right: 62px;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
@@ -878,7 +883,7 @@ fill: currentColor;
     border-color: transparent;
     cursor: pointer;
 
-    position: relative;
+    
     
     align-items:center;
     
@@ -887,7 +892,8 @@ fill: currentColor;
 .footer-send-icon {
     fill: var(--main-background-color);
     position: absolute;
-    margin-left: 12px;
+    /* margin-left: 12px; */
+    right: 28px;
     
 }
 
@@ -979,6 +985,54 @@ fill: currentColor;
     cursor: pointer;
 }
 
+.modal-name {
+    font-family: Roboto;
+    font-weight: bold;
+    line-height: calc(23/20);
+    font-size: 20px;
+    letter-spacing: 0.03em;
+
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+}
+
+.user-form-group {
+    display: block;
+    margin-top: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+
+.user-form-field {
+margin-bottom: 10px;
+padding: 10px 20px;
+font: inherit;
+border-radius: 3px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+background-color: transparent;
+}
+
+.user-form-message {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font: inherit;
+    border-radius: 3px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    .user-e-mail-field {
+        margin-bottom: 10px;
+        padding: 15px 295px 15px 16px;
+        font: inherit;
+        border-radius: 3px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+    }
 
 /* ----------Animation----------- */
 /* 
