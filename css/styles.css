@@ -843,7 +843,7 @@ fill: var(--main-background-color);
 
 .send-form-footer-down {
     position: relative;
-    margin-left: 23px;
+    margin-left: 45px;
 }
 
 .footer-form {
@@ -877,7 +877,7 @@ border-radius: 4px;
 border: 1px solid rgba(255, 255, 255, 0.3);
 background-color: transparent;
 
-width: 380px;
+width: 358px;
 }
 
 .footer-button {
@@ -1033,7 +1033,7 @@ width: 380px;
 
 .user-form-group {
     display: block;
-    margin-top: 12px;
+    /* margin-top: 12px; */
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -1042,48 +1042,122 @@ width: 380px;
 
 .user-form-field {
 margin-bottom: 10px;
+margin-top: 4px;
+margin-top: 4px;
 padding: 10px 20px;
 font: inherit;
 border-radius: 3px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 background-color: transparent;
+
+width: 100%;
+}
+
+.user-form-field:hover + .user-form-icon {
+    
+    fill: var(--accent-color);
+    
+
+    transform: transition var(--anim-fast);
+}
+
+.user-form-field:hover {
+    border-color: var(--accent-color);
+    cursor: pointer;
+    transform: transition var(--anim-fast);
 }
 
 .user-form-message {
-    margin-bottom: 20px;
+    
     padding: 10px 20px;
+    font: inherit;
+    border-radius: 3px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+    width: 100%;
+    }
+
+.user-e-mail-field {
+    margin-bottom: 10px;
+    padding: 15px 295px 15px 16px;
     font: inherit;
     border-radius: 3px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     }
 
-    .user-e-mail-field {
-        margin-bottom: 10px;
-        padding: 15px 295px 15px 16px;
-        font: inherit;
-        border-radius: 3px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-    }
+.user-name-wrapper {
+    position: relative;
+}
 
+.user-form-icon {
+position: absolute;
+left: 12px;
+top: 11px;
+}
+
+
+
+.modal-form-label {
+    font-size: 12px;
+    color: var(--secondary-text-color);
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.group-block {
+    display: flex;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+.modal-form-button {
+    display: inline-block;
+    padding: 10px 52px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    color: var(--main-background-color);
+    background: var(--accent-color);
+    
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    margin: 30px 164px 40px 164px;
+}
+
+
+.modal-form-button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transform: transition var(--anim-fast);
+}
+
+.agreement {
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+
+    font-size: 14px;
+    color: var(--secondary-text-color);
+}
+
+.modal-link {
+    color: var(--accent-color);
+}
+
+.user-form-checkbox {
+position: absolute;
+top: 2px;
+right: 95%;
+}
 /* ----------Animation----------- */
-/* 
-@keyframes scale-up-center {
-    0% {
-      transform: scale(0.5);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
-  @keyframes scale-down-center {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(0.5);
-    }
-  } */
   
 
 
