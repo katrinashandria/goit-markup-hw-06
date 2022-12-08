@@ -843,6 +843,7 @@ fill: var(--main-background-color);
 
 .send-form-footer-down {
     position: relative;
+    margin-left: 23px;
 }
 
 .footer-form {
@@ -867,6 +868,18 @@ fill: currentColor;
     fill: currentColor
 }
 
+/* footer form */
+
+.mail-input {
+margin: 0;
+padding: 15px 16px;
+border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+background-color: transparent;
+
+width: 380px;
+}
+
 .footer-button {
     
     padding: 10px 28px;
@@ -883,9 +896,8 @@ fill: currentColor;
     border-color: transparent;
     cursor: pointer;
 
-    
-    
     align-items:center;
+
     
 }
 
@@ -893,7 +905,26 @@ fill: currentColor;
     fill: var(--main-background-color);
     position: absolute;
     /* margin-left: 12px; */
-    right: 28px;
+    right: 25px;
+    
+}
+
+.user-form-label {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    position: absolute;
+
+    top: 15px;
+    left: 16px;
+
+}
+
+.form-field {
+    position: relative;
     
 }
 
