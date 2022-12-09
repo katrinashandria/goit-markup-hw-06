@@ -1059,14 +1059,15 @@ width: 100%;
     transform: transition var(--anim-fast);
 }
 
-.user-form-field:hover, .user-form-field:focus {
+.user-form-field:hover {
     border-color: var(--accent-color);
+    cursor: pointer;
+    transform: transition var(--anim-fast);
     
 }
 
-.user-form-field:hover {
-    cursor: pointer;
-    transform: transition var(--anim-fast);
+.user-form-field:focus {
+    border-color: var(--accent-color);
 }
 
 
