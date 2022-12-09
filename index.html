@@ -411,8 +411,8 @@
 <form name="footer_user_send" class="footer-form" autocomplete="on">
 
 <div class="form-field">
-    <label for="user_mail" class="user-form-label">E-mail</label>
-    <input type="email" class="mail-input" id="user_mail" name="user_mail">
+    <label for="user_mail" class="user-form-label"></label>
+    <input type="email" class="mail-input" id="user_mail" name="user_mail" placeholder="E-mail">
 </div>
 
 <button type="submit" class="footer-button">Підписатися</button>
@@ -438,7 +438,7 @@
             </svg>
         </button>
 
-        <h1 class="modal-name">Залиште свої дані, ми вам передзвонимо</h1>
+        <p class="modal-name">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-user-form">
             <div role="group" class="user-form-group">
                 <label for="user_name" class="modal-form-label">Ім'я</label>
@@ -473,8 +473,13 @@
                 </div>
             </div>
             <div role="group" class="group-block">
-                    <input type="checkbox" class="user-form-checkbox" id="user_agreement">
-                    <label for="user_agreement" class="agreement"> Погоджуюся з розсилкою та приймаю <a href="" class="modal-link"> Умови договору </a> </label>
+
+                    <label class="agreement"> 
+                    
+                        <input type="checkbox" class="user-form-checkbox" />
+                        <span class="checkbox-icon"></span>  
+                        Погоджуюся з розсилкою та приймаю <a href="" class="modal-link"> Умови договору </a> 
+                    </label>
             </div>
 
             <button type="submit" class="modal-form-button">Відправити</button>
