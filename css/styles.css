@@ -1168,14 +1168,15 @@ top: 11px;
     transform: transition var(--anim-fast);
 }
 
-.agreement {
+.check {
+    display: block;
     font-family: Roboto;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
 }
 
-.agreement .modal-link{
+.check .modal-link{
     font-family: Roboto;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -1208,6 +1209,56 @@ appearance: none;
     flex-direction: column;
     text-align: center;
 }
+
+.check {
+    display: block;
+}
+
+.check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+    background-size: contain;
+
+    
+}
+
+.icon-checked {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    margin-left: -25px;
+    margin-top: 3px;
+    fill: var(--main-background-color);
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    /* background-size: contain; */
+   
+}
+
+.check-input:checked + .icon-checked {
+    
+    
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    border-radius: 2px;
+    background-size: contain;
+    background-origin: content-box;
+   
+    
+}
+
+.icon-checked-fix {
+    margin-bottom: 6px;
+    margin-left: 1px;
+}
+
+
+
+
 /* ----------Animation----------- */
 
   
